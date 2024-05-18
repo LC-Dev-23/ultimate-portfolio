@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Poppins } from "next/font/google";
+import "../styles/globals.css";
 
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
@@ -9,7 +9,10 @@ import { ThemeProvider } from "@/components/ThemeProvider"
 
 
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Poppins({ 
+  weight: ["400","700"],
+  subsets: ["latin"] 
+});
 
 export const metadata: Metadata = {
   title: "LC Dev - Ultimate Portfolio",
@@ -29,12 +32,12 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
