@@ -1,13 +1,15 @@
+import Hero from "@/components/layout/home/Hero";
 import AboutMeSection from "@/components/layout/home/AboutSection";
-import HeroSection from "@/components/layout/home/HeroSection";
 import MyExpertise from "@/components/layout/home/MyExpertise";
+import CodingArsenal from "@/components/layout/home/CodingArsenal";
 
 export default function Home() {
   return (
     <main>
-      <HeroSection />
+      <Hero />
       <AboutMeSection />
-      <MyExpertise/>
+      <MyExpertise />
+      <CodingArsenal />
     </main>
   );
 }
