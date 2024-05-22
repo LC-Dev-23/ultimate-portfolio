@@ -28,7 +28,7 @@ const Header = () => {
     { href: '/contact', text: 'CONTACT', className: 'block lg:hidden' },
   ];
   return (
-    <header className='z-50 fixed w-full  dark:bg-white/90 bg-black/90 backdrop-blur-sm shadow-sm rounded-b-xl'>
+    <header className='z-50 fixed w-full dark:bg-white/90 bg-black/90 backdrop-blur-sm shadow-sm rounded-b-xl'>
       <nav className='flex content-center items-center justify-between py-2 container mx-auto'>
         <Link href={"/"} className=''>
           <Image

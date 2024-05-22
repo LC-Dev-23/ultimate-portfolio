@@ -8,10 +8,10 @@ import Link from "next/link";
 const Card3D = ({ title, cardData }: any) => {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-accentRed/[0.5] hover:shadow-2xl hover:shadow-black/[0.5] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[25rem] h-[42rem] rounded-xl p-6 border  ">
+      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-accentRed/[0.5] hover:shadow-2xl hover:shadow-black/[0.5] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[20rem] md:w-[25rem] h-[42rem] rounded-xl p-6 border  ">
         <CardItem translateZ="60" className="w-full">
           <Image
-            className="h-[15rem] w-full object-contain rounded-xl group-hover/card:shadow-xl"
+            className="h-[10rem] md:h-[15rem] w-full object-contain rounded-xl group-hover/card:shadow-xl"
             src="/images/home/responsive-hero.png"
             width={700}
             height={700}

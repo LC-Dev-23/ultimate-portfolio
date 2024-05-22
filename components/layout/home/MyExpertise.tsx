@@ -34,9 +34,9 @@ const cardData = [
 
 const MyExpertise = () => {
   return (
-    <Section className="relative" >
-      <h2 className="text-center text-4xl font-semibold mb-10"><span className="text-accentRed">My</span> Expertise</h2>
-      <div className="flex flex-col lg:flex-row gap-10 justify-center">
+    <Section className="">
+      <h2 className="text-center text-3xl lg:text-5xl font-semibold mb-40"><span className="text-accentRed">My</span> Expertise</h2>
+      <div className="flex flex-col lg:flex-row lg:flex-wrap gap-10 justify-center">
         {cardData.map((card, index) => (
           <Card3D key={index} title={card.title} cardData={card.listItems}/>
         ))}
