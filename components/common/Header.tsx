@@ -57,10 +57,10 @@ const Header = () => {
         <Button onClick={toggleMenu} variant="link" size={'icon'} className='h-10 w-10 lg:hidden dark:text-black text-white text-4xl bg-transparent'>{isOpen ? <RiCloseLine /> : <RiMenu2Line />}</Button>
       </nav>
       {/* Mobile Nav */}
-      <nav className={`${isOpen ? "block" : "hidden"} h-screen lg:h-auto`}>
+      <nav className={`${isOpen ? "block" : "hidden"} h-screen lg:h-auto text-base md:text-2xl`}>
         <ul className={`dark:text-black text-white gap-10 items-center flex flex-col pt-20 lg:hidden`}>
           {links.map(({ href, text, className }) => (
-            <Link key={href} href={href}>
+            <Link onClick={()=> setIsOpen(!isOpen)} key={href} href={href}>
               <li className={pathname === href ? 'text-accentRed font-bold scale-110' : 'hover:text-accentRed hover:scale-110'}>
                 {text}
               </li>
