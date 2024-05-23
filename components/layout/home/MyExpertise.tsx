@@ -5,6 +5,7 @@ import React from 'react'
 
 const cardData = [
   {
+    srcImg: '/images/home/front-end-fundamentals.png',
     title: 'Front-End Fundamentals',
     listItems: [
       'I possess a strong foundation in the essential tools for building modern websites, including HTML, CSS, and JavaScript.',
@@ -14,6 +15,7 @@ const cardData = [
     ],
   },
   {
+    srcImg: '/images/home/bringing-websites-to-life.png',
     title: 'Bringing Websites to Life',
     listItems: [
       'I have a strong grasp of modern JavaScript frameworks like React/NextJs',
@@ -23,6 +25,7 @@ const cardData = [
     ],
   },
   {
+    srcImg: '/images/home/optimizing-for-performance.png',
     title: 'Optimizing for Performance',
     listItems: [
       'I optimize websites for search engines (SEO) by implementing best practices like clean code structure, meta descriptions, and strategic keyword use. This helps users find your website more easily.',
@@ -35,10 +38,10 @@ const cardData = [
 const MyExpertise = () => {
   return (
     <Section className="">
-      <h2 className="text-center text-3xl lg:text-5xl font-semibold mb-40"><span className="text-accentRed">My</span> Expertise</h2>
+      <h2 className="text-center text-3xl lg:text-5xl font-semibold mb-20"><span className="text-accentRed">My</span> Expertise</h2>
       <div className="flex flex-col lg:flex-row lg:flex-wrap gap-10 justify-center">
         {cardData.map((card, index) => (
-          <Card3D key={index} title={card.title} cardData={card.listItems}/>
+          <Card3D key={index} srcImg={card.srcImg} title={card.title} cardData={card.listItems}/>
         ))}
       </div>
     </Section>
