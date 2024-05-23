@@ -26,6 +26,9 @@ const config = {
       },
     },
     extend: {
+      dropShadow: {
+        'logo-shadow': '0 2px 2px rgba(0, 0, 0, 0.2)', // Adjust opacity for visibility
+      },
       colors: {
         accentRed: "#DE0000",
 

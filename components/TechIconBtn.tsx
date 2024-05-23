@@ -1,12 +1,11 @@
 import React from 'react'
 import Image from "next/image";
 
-const TechIconBtn = ({ title,srcImg, altImg, ...props }: any) => {
+const TechIconBtn = ({ title,srcImg, altImg, style }: any) => {
     return (
         <div className="cursor-pointer">
         <Image
-            {...props}
-            className="h-[5rem] w-full object-contain rounded-xl group-hover/card:shadow-xl hover:scale-110"
+            className={`${style} drop-shadow-logo-shadow h-[5rem] w-full object-contain rounded-xl group-hover/card:shadow-xl hover:scale-110`}
             src={srcImg}
             width={700}
             height={700}

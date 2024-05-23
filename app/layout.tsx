@@ -5,6 +5,7 @@ import "../styles/globals.css";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider"
+import Attribution from "@/components/Attribution";
 
 
 
@@ -44,6 +45,7 @@ export default function RootLayout({
           <Header />
           {children}
         </ThemeProvider>
+        <Attribution />
         <Footer />
       </body>
     </html>
