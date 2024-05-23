@@ -19,7 +19,7 @@ const CodingArsenal = () => {
           <TechIconBtn title="Tailwind" srcImg="/images/home/tech-logo/tailwind-logo.png" />
           <TechIconBtn title="React Js" srcImg="/images/home/tech-logo/react-logo.png" />
           <TechIconBtn title="Next Js" srcImg="/images/home/tech-logo/nextjs-logo.png" style="dark:invert" />
-          <TechIconBtn title="Vite" srcImg="/images/home/tech-logo/Vite-logo.png" />
+          <TechIconBtn title="Vite" srcImg="/images/home/tech-logo/vite-logo.png" />
           <TechIconBtn title="Framer" srcImg="/images/home/tech-logo/framer-motion-logo.png" />
           <TechIconBtn title="Radix UI" srcImg="/images/home/tech-logo/radixui-logo.png" style="dark:invert" />
           <TechIconBtn title="Shadcn/UI" srcImg="/images/home/tech-logo/shadcnui-logo.png" style="dark:invert" />
