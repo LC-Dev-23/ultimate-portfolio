@@ -43,8 +43,8 @@ const Header = () => {
         {/* Desktop Nav */}
         <ul className={`dark:text-black text-white font-semibold gap-10 items-center hidden lg:flex`}>
           {links.map(({ href, text, className }) => (
-            <li className={`${pathname === href ? 'text-accentRed font-bold scale-110' : 'hover:text-accentRed hover:scale-110'} ${className}`}>
-              <Link key={href} href={href} >
+            <li key={href} className={`${pathname === href ? 'text-accentRed font-bold scale-110' : 'hover:text-accentRed hover:scale-110'} ${className}`}>
+              <Link href={href} >
                 {text}
               </Link>
             </li>
@@ -61,8 +61,8 @@ const Header = () => {
         <ul className={`dark:text-black text-white gap-10 items-center flex flex-col pt-20 lg:hidden`}>
           {links.map(({ href, text, className }) => (
 
-            <li className={pathname === href ? 'text-accentRed font-bold scale-110' : 'hover:text-accentRed hover:scale-110'}>
-              <Link onClick={() => setIsOpen(!isOpen)} key={href} href={href}>
+            <li key={href} className={pathname === href ? 'text-accentRed font-bold scale-110' : 'hover:text-accentRed hover:scale-110'}>
+              <Link onClick={() => setIsOpen(!isOpen)} href={href}>
                 {text}
               </Link>
             </li>
