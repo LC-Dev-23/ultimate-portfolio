@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 
-const TechIconBtn = ({ title,srcImg, altImg, style }: any) => {
+const TechIconBtn = ({ title,srcImg , style }: any) => {
     return (
         <div className="cursor-pointer">
         <Image
@@ -9,7 +9,7 @@ const TechIconBtn = ({ title,srcImg, altImg, style }: any) => {
             src={srcImg}
             width={700}
             height={700}
-            alt={altImg}
+            alt={`${title} logo`}
             priority={true}
         />
         <h3 className="text-center p-5 font-light">{title}</h3>
