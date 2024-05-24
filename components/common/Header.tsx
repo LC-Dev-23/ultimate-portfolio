@@ -43,13 +43,13 @@ const Header = () => {
         {/* Desktop Nav */}
         <ul className={`dark:text-black text-white font-semibold gap-10 items-center hidden lg:flex`}>
           {links.map(({ href, text, className }) => (
-            <Link key={href} href={href} className={className}>
-              <li className={pathname === href ? 'text-accentRed font-bold scale-110' : 'hover:text-accentRed hover:scale-110'}>
+            <li className={`${pathname === href ? 'text-accentRed font-bold scale-110' : 'hover:text-accentRed hover:scale-110'} ${className}`}>
+              <Link key={href} href={href} >
                 {text}
-              </li>
-            </Link>
+              </Link>
+            </li>
           ))}
-          <ModeToggle />
+          <li><ModeToggle /></li>
         </ul>
         <Link className='hidden lg:block' href={"/contact"}>
           <button className={` dark:text-black text-white font-semibold border-[3px] dark:hover:border-accentRed hover:border-accentRed px-5 py-2 shadow-2xl ${"/contact" === pathname ? "border-accentRed text-accentRed" : "dark:border-black border-white"}`}>CONTACT</button>
@@ -60,16 +60,19 @@ const Header = () => {
       <nav className={`${isOpen ? "block" : "hidden"} h-screen lg:h-auto text-base md:text-2xl`}>
         <ul className={`dark:text-black text-white gap-10 items-center flex flex-col pt-20 lg:hidden`}>
           {links.map(({ href, text, className }) => (
-            <Link onClick={()=> setIsOpen(!isOpen)} key={href} href={href}>
-              <li className={pathname === href ? 'text-accentRed font-bold scale-110' : 'hover:text-accentRed hover:scale-110'}>
+
+            <li className={pathname === href ? 'text-accentRed font-bold scale-110' : 'hover:text-accentRed hover:scale-110'}>
+              <Link onClick={() => setIsOpen(!isOpen)} key={href} href={href}>
                 {text}
-              </li>
-            </Link>
+              </Link>
+            </li>
           ))}
-          <ModeToggle />
+          <li>
+            <ModeToggle />
+          </li>
         </ul>
       </nav>
-    </header>
+    </header >
   )
 }
 
