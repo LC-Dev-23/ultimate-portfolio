@@ -7,8 +7,8 @@ const CodingArsenal = () => {
     <div className='relative'>
       <div className="h-[135rem] md:h-[100rem] lg:h-[75rem] xl:h-[55rem] 2xl:h-[45rem] left-0 top-20 w-full dark:bg-black bg-white  dark:bg-dot-white/[0.3] bg-dot-black/[0.3] absolute flex items-center justify-center -z-10" />
         <div className="h-[135rem] md:h-[100rem] lg:h-[75rem] xl:h-[55rem] 2xl:h-[45rem] top-20 absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] -z-10" />
-      <Section className="px-0 xl:gap-20">
-        <h2 className="text-center text-3xl lg:text-5xl font-semibold mb-20">Coding <span className="text-accentRed">Arsenal</span></h2>
+      <Section className="px-0 xl:gap-20 pb-20">
+        <h2 className="text-center text-3xl lg:text-5xl font-semibold pt-20">Coding <span className="text-accentRed">Arsenal</span></h2>
         <div className="w-[80%] md:w-[40rem] lg:w-[60rem] xl:w-[70rem] 2xl:w-[85rem] mx-auto grid grid-flow-row grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-8 pt-16 gap-10 place-content-center mt-5">
           <TechIconBtn title="HTML 5" srcImg="/images/home/tech-logo/html5-logo.png" />
           <TechIconBtn title="CSS 3" srcImg="/images/home/tech-logo/css3-logo.png" />

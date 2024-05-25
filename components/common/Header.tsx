@@ -1,9 +1,8 @@
 "use client"
 import React, { useState } from 'react'
 import Image from 'next/image'
-import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-
+import { usePathname } from 'next/navigation';
 import { Button } from '../ui/button';
 import { RiCloseLine, RiMenu2Line } from 'react-icons/ri';
 import { ModeToggle } from '../ModeToggle';
@@ -24,7 +23,7 @@ const Header = () => {
     { href: '/', text: 'HOME' },
     { href: '/about', text: 'ABOUT' },
     { href: '/portfolio', text: 'PORTFOLIO' },
-    { href: '/services', text: 'SERVICES' },
+    { href: '/experience', text: 'EXPERIENCE' },
     { href: '/contact', text: 'CONTACT', className: 'block lg:hidden' },
   ];
   return (
@@ -58,7 +57,7 @@ const Header = () => {
       </nav>
       {/* Mobile Nav */}
       <nav className={`${isOpen ? "block" : "hidden"} h-screen lg:h-auto text-base md:text-2xl`}>
-        <ul className={`dark:text-black text-white gap-10 items-center flex flex-col pt-20 lg:hidden`}>
+        <ul className={`dark:text-black text-white gap-10 items-center flex flex-col pt-10 md:pt-40 lg:hidden`}>
           {links.map(({ href, text, className }) => (
 
             <li key={href} className={pathname === href ? 'text-accentRed font-bold scale-110' : 'hover:text-accentRed hover:scale-110'}>
