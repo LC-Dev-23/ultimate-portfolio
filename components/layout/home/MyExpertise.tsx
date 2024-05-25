@@ -1,7 +1,7 @@
-
+import React from 'react'
 import Card3D from '@/components/Card3D'
 import Section from '@/components/common/Section'
-import React from 'react'
+import { SparklesCore } from '@/components/ui/sparkles';
 
 const cardData = [
   {
@@ -37,14 +37,27 @@ const cardData = [
 
 const MyExpertise = () => {
   return (
-    <Section className="">
-      <h2 className="text-center text-3xl lg:text-5xl font-semibold mb-20"><span className="text-accentRed">My</span> Expertise</h2>
-      <div className="flex flex-col lg:flex-row lg:flex-wrap gap-10 justify-center">
-        {cardData.map((card, index) => (
-          <Card3D key={index} srcImg={card.srcImg} title={card.title} cardData={card.listItems}/>
-        ))}
+    <div className='relative'>
+      <div className="w-full absolute -z-10 inset-0 h-auto">
+        <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={100}
+          className="w-full h-full"
+          particleColor="#FFFFFF"
+        />
       </div>
-    </Section>
+      <Section className="pb-40">
+        <h2 className="text-center text-3xl lg:text-5xl font-semibold py-20"><span className="text-accentRed">My</span> Expertise</h2>
+        <div className="flex flex-col lg:flex-row lg:flex-wrap gap-10 justify-center">
+          {cardData.map((card, index) => (
+            <Card3D key={index} srcImg={card.srcImg} title={card.title} cardData={card.listItems} />
+          ))}
+        </div>
+      </Section>
+    </div>
   )
 }
 
