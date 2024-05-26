@@ -108,9 +108,9 @@ export const Header = () => {
             <span className="text-accentRed">My</span> Portfolio
             </h1>
             <p className="max-w-2xl text-base md:text-lg mt-8 dark:text-neutral-200">
-            I'm a passionate web developer driven by curiosity and a love for technology. 
-            This portfolio highlights my journey and the projects I've poured my heart and skills into. 
-            Let's see what we can create together!
+            I&apos;m a passionate web developer driven by curiosity and a love for technology. 
+            This portfolio highlights my journey and the projects I&apos;ve poured my heart and skills into. 
+            Let&apos;s see what we can create together!
             </p>
         </div>
     );
