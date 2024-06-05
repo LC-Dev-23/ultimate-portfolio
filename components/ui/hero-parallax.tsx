@@ -107,9 +107,9 @@ export const Header = () => {
             <h1 className="text-2xl md:text-5xl font-bold dark:text-white">
             <span className="text-accentRed">My</span> Portfolio
             </h1>
-            <p className="max-w-2xl text-base md:text-lg mt-8 dark:text-neutral-200">
+            <p className="max-w-2xl text-base md:text-lg mt-8 dark:text-white">
             I&apos;m a passionate web developer driven by curiosity and a love for technology. 
-            This portfolio highlights my journey and the projects I&apos;ve poured my heart and skills into. 
+            This portfolio highlights my journey and the projects I&apos; ve poured my heart and skills into. 
             Let&apos;s see what we can create together!
             </p>
         </div>

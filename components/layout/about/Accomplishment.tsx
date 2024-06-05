@@ -26,7 +26,7 @@ const Accomplishment = () => {
         },
     ];
     return (
-        <Section className="flex flex-col-reverse lg:flex-row items-center justify-center h-auto sm:max-h-[70rem] lg:max-h-[80rem] pt-20 lg:gap-10 xl:gap-20">
+        <Section className="flex flex-col-reverse lg:flex-row items-center justify-center h-auto sm:max-h-[70rem] lg:max-h-[80rem]  xl:min-h-[80vh] pt-24 lg:gap-10 xl:gap-20">
             <div>
                 <CarouselImg imgData={carouselImages} />
             </div>

@@ -30,28 +30,8 @@ const Hobby = () => {
             }
         },
     ];
-    // const carouselImages = [
-    //     {
-    //         image: {
-    //             src: "/images/about/mnl-de-speedtest.png",
-    //             alt: "MNLeistung DE PageSpeed Insight Result"
-    //         }
-    //     },
-    //     {
-    //         image: {
-    //             src: "/images/about/mnl-ph-speedtest.png",
-    //             alt: "MNLeistung PH PageSpeed Insight Result"
-    //         }
-    //     },
-    //     {
-    //         image: {
-    //             src: "/images/about/zeta-world-speedtest.png",
-    //             alt: "ZETA World PH PageSpeed Insight Result"
-    //         }
-    //     },
-    // ];
     return (
-        <Section className="flex flex-col lg:flex-row items-center justify-center h-auto sm:max-h-[60rem] lg:max-h-[65rem] lg:gap-10 xl:gap-20 pb-10">
+        <Section className="flex flex-col lg:flex-row items-center justify-center h-auto sm:max-h-[60rem] lg:max-h-[65rem] xl:min-h-[80vh] py-24 lg:gap-10 xl:gap-20">
             <div className='w-full mb-10 md:w-[80%] lg:w-[60%] mt-5'>
                 <h2 className="text-lg md:text-2xl lg:text-4xl font-semibold mb-5 lg:mb-10 lg:text-center"><span className="text-accentRed">My</span> Hobby</h2>
                 <p className='text-sm lg:text-lg mt-3 lg:mt-5'>Learning isn&apos;t just a chore for me, it&apos;s a genuine source of joy and excitement. I continuously invest in online courses on platforms like Udemy to expand my knowledge and stay sharp. YouTube channels keep me updated with the latest tech trends, while building personal side projects allows me to solidify my core web development skills and explore new ideas in a practical way. This constant learning keeps me engaged and ensures I&apos;m always bringing the freshest approaches to my work.</p>

@@ -1,9 +1,10 @@
 import React from 'react'
-import AboutMe from '@/components/layout/about-me/AboutMe'
-import Accomplishment from '@/components/layout/about-me/Accomplishment'
-import Hobby from '@/components/layout/about-me/Hobby'
-import Education from '@/components/layout/about-me/Education'
+import AboutMe from '@/components/layout/about/AboutMe'
+import Accomplishment from '@/components/layout/about/Accomplishment'
+import Education from '@/components/layout/about/Education'
+import Hobby from '@/components/layout/about/Hobby'
 import { SparklesCore } from '@/components/ui/sparkles'
+
 
 
 const page = () => {
